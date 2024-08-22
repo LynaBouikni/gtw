@@ -1,6 +1,7 @@
 path0 = cd;
 
-cd 'C:\Users\lynab\OneDrive\Bureau\UAE INTERNSHIP\gtw\lib';
+cd 'C:\Users\lynab\OneDrive\Bureau\UAE INTERNSHIP\gtw\lib\cell';
+
 mex cellss.cpp;
 mex oness.cpp;
 mex zeross.cpp;
