@@ -1,3 +1,13 @@
+
+%The toyAliSrc function is designed to generate toy sequences 
+%that can be used to test alignment algorithms. The sequences 
+%can take on different shapes (e.g., sine, circle, spiral) and 
+%undergo temporal and spatial transformations. The function outputs
+% various transformed versions of the sequences along with the ground 
+% truth alignment, which can be used to evaluate the performance of alignment
+% algorithms.
+
+
 function wsSrc = toyAliSrc(tag, l, m, varargin)
 % Generate toy sequence for alignment.
 %
@@ -14,13 +24,13 @@ function wsSrc = toyAliSrc(tag, l, m, varargin)
 %
 % Output
 %   wsSrc
-%     X0    -  latent sequence, 2 x t
-%     XTs   -  sequences after temporal transformation, 1 x m (cell)
-%     XGs   -  sequences after global spatial transformation, 1 x m (cell)
+%     X0    -  latent sequence, 2 x tm (cell)
 %     XLs   -  sequences after local  spatial transformation, 1 x m (cell)
 %     XGNs  -  sequences after global spatial transformation + noise in 3rd dimension, 1 x m (cell)
 %     XLNs  -  sequences after local  spatial transformation + noise in 3rd dimension, 1 x m (cell)
 %     aliT  -  ground truth alignment
+%     XTs   -  sequences after temporal transformation, 1 x m (cell)
+%     XGs   -  sequences after global spatial transformation, 1 x 
 %
 % History
 %   create  -  Feng Zhou (zhfe99@gmail.com), 03-17-2009
