@@ -3,22 +3,19 @@ function prSet(lMa)
 %
 % Input
 %   lMa     -  maximum level, 0 | 1 | 2 | ...
-%
-% History
-%   create  -  Feng Zhou (zhfe99@gmail.com), 01-29-2009
-%   modify  -  Feng Zhou (zhfe99@gmail.com), 03-02-2012
 
 % variables
 global lPr lMaPr;
 global nmPrs ticPrs ticPr0s nRepPrs scaPrs;
 
 % level
-lPr = 1;
-lMaPr = lMa;
+lPr = 1;         % Set the current level to 1
+lMaPr = lMa;     % Set the maximum level to the input value
 
 % list
-nMa = 10;
-nmPrs = cell(1, nMa);
-ticPrs = zeros(1, nMa, 'uint64');
-ticPr0s = zeros(1, nMa, 'uint64');
-[nRepPrs, scaPrs] = zeross(1, nMa);
+nMa = 10;        % Maximum number of entries in lists/arrays
+nmPrs = cell(1, nMa);  % Initialize a cell array for storing names/labels
+ticPrs = zeros(1, nMa, 'uint64');  % Initialize an array for storing tic values
+ticPr0s = zeros(1, nMa, 'uint64'); % Initialize an array for storing initial tic values
+[nRepPrs, scaPrs] = zeross(1, nMa); % Initialize arrays for repetition counts and scale factors
+

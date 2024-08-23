@@ -347,6 +347,7 @@ end
 %to the current iteration.
 
     %Summary:
+    
     %This part of the code handles the visualization of the alignment process. 
     %It shows how the sequences look before and after alignment, compares them to the ground-truth 
     %alignment (if available), and visualizes both the spatial transformations and temporal warping 
